@@ -13,7 +13,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div>
-                        <img src="../../public/home.png" alt="home image not loaded" width={400} height={400} />
+                        <img className="image" src="../../public/home.png" alt="home image not loaded" width={400} height={400} />
                     </div>
                 </div>
                 <div className="bg-white text-gray-700 flex py-6 px-8 rounded-xl gap-10 items-center justify-center">
@@ -40,7 +40,7 @@ const Home = () => {
             </div>
             <div className="w-full pb-32 h-[30rem] flex justify-evenly items-center">
                 <div>
-                    <img src="../../public/home.png" alt="home image not loaded" width={400} height={400} />
+                    <img className="image" src="../../public/design.png" alt="home image not loaded" width={400} height={400} />
                 </div>
                 <div className="text-white flex flex-col gap-3">
                     <h2 className="text-gray-300">We are the World Best IT Company</h2>
