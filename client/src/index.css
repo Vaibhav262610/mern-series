@@ -37,6 +37,20 @@ body {
   border-radius: 5px;
 }
 
+.btn2 {
+  border: 1px solid #646cff;
+  color: white;
+  width: fit-content;
+  margin-top: 10px;
+  padding: 10px 25px 10px 25px;
+  border-radius: 5px;
+}
+
+.vertical-line {
+  border-left: 2px solid rgb(49, 49, 49);
+  height: 100px;
+}
+
 .line {
   border: 3px solid #646cff;
   border-radius: 2px;

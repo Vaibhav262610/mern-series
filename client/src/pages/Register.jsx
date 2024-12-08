@@ -25,7 +25,6 @@ const Register = () => {
         alert(user)
     }
 
-
     return (
         <>
             <div className="flex h-[45rem] w-full justify-evenly items-center">
