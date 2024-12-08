@@ -3,11 +3,70 @@
 @tailwind utilities;
 
 body {
-  background-color: #242424;
+  background-color: #1b1b1b;
   font-family: 'Poppins', sans-serif;
   color: #646cff;
 }
 
 .list {
   text-decoration: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #646cff;
+}
+
+.btn {
+  background-color: #646cff;
+  color: white;
+  width: fit-content;
+  margin-top: 10px;
+  padding: 10px 25px 10px 25px;
+  border-radius: 5px;
+}
+
+.line {
+  border: 3px solid #646cff;
+  border-radius: 2px;
+  width: 20rem;
+}
+
+.line2 {
+  border: 3px solid #646cff;
+  border-radius: 2px;
+  width: 25rem;
+}
+
+.footer {
+  background-color: #646cff;
+}
+
+.image {
+  animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+  from {
+    transform: translate(0, 0);
+  }
+
+  65% {
+    transform: translate(0, 1rem);
+  }
+
+  to {
+    transform: translate(0, 0);
+  }
 }
