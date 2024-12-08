@@ -27,16 +27,16 @@ const Contact = () => {
 
     return (
         <>
-            <div className="flex h-[40rem] w-full justify-evenly items-center">
+            <div className="flex h-screen w-full justify-evenly items-center">
                 <div className="flex flex-col gap-3">
                     <div>
-                        <h1 className="text-4xl font-semibold text-white">Contact Form</h1>
+                        <h1 className="text-5xl font-semibold text-white">Contact Form</h1>
                         <hr className="line2" />
                     </div>
                     <img className="image" src="../../public/support.png" alt="Login_image" width={500} height={500} />
                 </div>
                 <div>
-                    <div className=" mt-20">
+                    <div className=" ">
                         <form onSubmit={handleSubmit} className="gap-3 flex flex-col">
                             <div className="flex flex-col gap-2">
                                 <label className="text-white text-md" htmlFor="username">Username</label>

@@ -5,10 +5,12 @@ const Navbar = () => {
         <>
             <div className="flex justify-around py-8">
                 <div className="text-2xl font-bold uppercase">
-                    <div className="flex">
-                        <h1>VAIBHAV</h1>
-                        <h1 className="text-white">MERN</h1>
-                    </div>
+                    <NavLink to='/'>
+                        <div className="flex">
+                            <h1>VAIBHAV</h1>
+                            <h1 className="text-white">MERN</h1>
+                        </div>
+                    </NavLink>
                 </div>
                 <div className="flex gap-8 text-md">
                     <NavLink to="/"> <h1 className="duration-150 hover:text-white">Home</h1></NavLink>
