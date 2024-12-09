@@ -1,6 +1,9 @@
+import { NavLink } from "react-router-dom"
 import Analytics from "../components/Analytics"
+import { useAuth } from "../store/auth"
 
 const Home = () => {
+    const { isLoggedIn } = useAuth()
     return (
         <>
             <div className="w-full flex flex-col h-screen justify-evenly items-center">
@@ -10,8 +13,17 @@ const Home = () => {
                         <h1 className="text-4xl font-semibold w-[20rem]">Welcome to Zoro Technical</h1>
                         <h2 className="text-gray-300 w-[36rem] py-4 ">Are you ready to take your business to the next level with cutting-edge IT solutions? Look no further! At Zoro Technical, we specialize in providing innovative IT services and solutions tailored to meet your unique needs.</h2>
                         <div className="flex gap-10">
-                            <button className="btn">Connect Now</button>
-                            <button className="btn2">Learn More</button>
+                            {
+                                isLoggedIn ?
+                                    <button className="btn2">Learn More</button>
+                                    :
+                                    <>
+                                        <NavLink to='/login'>
+                                            <button className="btn">Connect Now</button>
+                                        </NavLink>
+                                        <button className="btn2">Learn More</button>
+                                    </>
+                            }
                         </div>
                     </div>
                     <div>
@@ -29,8 +41,17 @@ const Home = () => {
                     <h1 className="text-4xl font-semibold w-[20rem]">Welcome to Zoro Technical</h1>
                     <h2 className="text-gray-300 w-[36rem] py-4 ">Are you ready to take your business to the next level with cutting-edge IT solutions? Look no further! At Zoro Technical, we specialize in providing innovative IT services and solutions tailored to meet your unique needs.</h2>
                     <div className="flex gap-10">
-                        <button className="btn">Connect Now</button>
-                        <button className="btn2">Learn More</button>
+                        {
+                            isLoggedIn ?
+                                <button className="btn2">Learn More</button>
+                                :
+                                <>
+                                    <NavLink to='/login'>
+                                        <button className="btn">Connect Now</button>
+                                    </NavLink>
+                                    <button className="btn2">Learn More</button>
+                                </>
+                        }
                     </div>
                 </div>
             </div>
